@@ -1,10 +1,17 @@
-import React from "react";
+import React , {useEffect,useRef} from "react";
 import './Offers.css';
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
 
 function Offers() {
+    const topContainer = useRef();
     const navigate = useNavigate();
+
+
+    useEffect(() => {
+      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+      }, []);
+      
 
     const handleRequestDetails =() =>{
         navigate('/Book');
@@ -12,6 +19,7 @@ function Offers() {
 
     return (
         <>
+        <div ref={topContainer}/>
             <div
                 id="carouselExampleControls"
                 className="carousel slide  carsouel1-edit"

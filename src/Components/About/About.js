@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect, useRef} from "react";
 import './About.css';
 import Footer from '../Footer/Footer';
 
 
 function About() {
+
+    const topContainer = useRef();
+    useEffect(() => {
+      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+      }, []);
+
     return(
     <>
+        <div ref={topContainer} />
   
     <div className='About us'>
 

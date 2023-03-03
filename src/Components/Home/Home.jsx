@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import "./Home.css";
 import Footer from "../Footer/Footer";
 
 function Home() {
+    const topContainer = useRef();
+        useEffect(() => {
+          topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+          }, []);
+
     return (
         <div>
+        <div ref={topContainer} />
             {/* <div className="main-heading">
                 <h1 className="main-heading">Welcome</h1>
             </div> */}

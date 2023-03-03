@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Layout from '../containers/Layout'
-// import Air from './Air';
+import Air from './Components/Air/Air';
 import Navbar from './Components/Navbar/Navbar';
 // import Footer from './Footer';
 import Home from './Components/Home/Home';
@@ -21,12 +21,13 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
+
+          <Route exact path="/Air" element={<Air/>}/>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/Book" element={<Book/>}/>
-          {/* <Route exact path="/Air" element={<Air/>}/> */}
           <Route exact path="/Contact" element={<Contact/>}/>
           <Route exact path="/Offers" element={<Offers/>}/>
-          <Route exact path='/About Us' element={<About/>}/>
+          <Route exact path='/About' element={<About/>}/>
           <Route exact path='/Membership' element={<Membership/>}/>
           <Route exact path='/Destination' element={<Destination/>}/>
           <Route exact path='/Inquire' element={<Inquire/>}/>

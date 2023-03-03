@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect,useRef} from "react";
 import "../../App.css";
 import Footer from "../Footer/Footer"
 import './Membership.css'
@@ -6,6 +6,11 @@ import emailjs from 'emailjs-com';
 
 
 function Membership() {
+  const topContainer = useRef();
+    useEffect(() => {
+      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+      }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -32,7 +37,7 @@ function Membership() {
 
   return (
     <>
-      
+      <div ref={topContainer}/>
       <div className="Membership">
           <div className="members position-relative">
                   <img

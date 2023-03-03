@@ -1,9 +1,14 @@
-import React from 'react';
+import React , {useEffect,useRef} from "react";
 import './Contact.css';
 import Footer from "../Footer/Footer";
 import emailjs from 'emailjs-com';
 
 function Contact() {
+    const topContainer = useRef();
+    useEffect(() => {
+      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+      }, []);
+
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -28,6 +33,7 @@ function Contact() {
       };
     return (
         <>
+      <div ref={topContainer}/>
             <div>
                 <div className='position-relative'>
                 <h1 className="main-heading">Contact Us</h1>

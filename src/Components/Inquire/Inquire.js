@@ -1,10 +1,16 @@
-import React from "react";
+import React , {useEffect,useRef} from "react";
 import "../../App.css";
 import Footer from "../Footer/Footer"
 import './Inquire.css';
 import emailjs from 'emailjs-com';
 
 function Inquire() {
+
+  const topContainer = useRef();
+  useEffect(() => {
+    topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+    }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -30,7 +36,7 @@ function Inquire() {
   };
   return (
     <>
-    
+      <div ref={topContainer}/>
       <div className="Inquire">
         <div className='inquiry'>
             <img

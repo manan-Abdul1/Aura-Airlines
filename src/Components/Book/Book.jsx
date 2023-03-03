@@ -1,10 +1,15 @@
-import React from "react";
+import React , {useEffect,useRef} from "react";
 import "./Book.css";
 import Footer from "../Footer/Footer";
 import emailjs from 'emailjs-com';
 
 
 function Book() {
+    const topContainer = useRef();
+    useEffect(() => {
+      topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+      }, []);
+
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -18,6 +23,8 @@ function Book() {
       };
     return (
         <>
+      <div ref={topContainer}/>
+
             <div>
                 <div className="video-edit" >
 

@@ -1,5 +1,7 @@
 import React from "react";
 import "../../App.css";
+import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -37,42 +39,42 @@ function Footer() {
                 <ul className="quick-links">
                   <li>
                     <p>
-                      <a href="#!">HOME</a>
+                      <Link to="/">HOME</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Book</a>
+                      <Link to="/Book">Book</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">About Us</a>
+                      <Link to="/About">About Us</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Contact Us</a>
+                      <Link to="/Contact">Contact Us</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Membership</a>
+                      <Link to="/Membership">Membership</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Destination</a>
+                      <Link to="/Destination">Destination</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Offers</a>
+                      <Link to="/Offers">Offers</Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a href="#!">Inquire</a>
+                      <Link to="/Inquire">Inquire</Link>
                     </p>
                   </li>
                 </ul>
@@ -126,6 +128,7 @@ function Footer() {
                 <a
                   type="button"
                   className="btn-floating btn-fb icon-size waves-effect waves-light"
+                  href="https://www.facebook.com/"
                 >
                   <i class="fab fa-facebook-f"></i>
                 </a>
@@ -133,6 +136,7 @@ function Footer() {
                 <a
                   type="button"
                   className="btn-floating btn-tw icon-size waves-effect waves-light"
+                  href="https://www.youtube.com/"
                 >
                 <i class="fa-brands fa-youtube"></i>
                 </a>
@@ -140,6 +144,7 @@ function Footer() {
                 <a
                   type="button"
                   className="btn-floating btn-gplus icon-size waves-effect waves-light"
+                  href="https://www.instagram.com/"
                 >
               <i class="fa-brands fa-instagram"></i>
                 </a>
