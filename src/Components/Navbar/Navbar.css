@@ -1,0 +1,26 @@
+.brand-edit{
+    width: 10%;
+}
+.logo-edit{
+    width: 80%;
+}    
+.edit{
+    margin: 0px 0px 0px 0px;
+}
+.navbar-toggler{
+    display: flex;
+}
+.dropdown-toggle .active{
+    margin-bottom: 200px;
+}
+.navdrop .active{
+    /* padding: 500px; */
+}
+
+a{
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-transform: uppercase; 
+}
