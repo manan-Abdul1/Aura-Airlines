@@ -92,9 +92,7 @@ function Inquire() {
           <textarea  className="messageInput-Inquire" name='message' cols="30" rows="10"></textarea>          
 
           <p className="reached-inquire p-1">How Do You Wish To Be Reached? *</p>
-          <select className="reached-inquire" name="contact" id="" required>
-  
- 
+          <select className="reached-inquire mx-5" name="contact" id="" required>
           <option value="call us">Call us </option>
           <option value="email">Email</option>
         </select>

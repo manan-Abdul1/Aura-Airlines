@@ -106,14 +106,25 @@ function Membership() {
        
 
           <p className="reached-inquire p-1">How Do You Wish To Be Reached? *</p>
-          <select className="reached-inquire p-1" name="reached" id="">
+          <select className="reached-inquire mx-5 p-1" name="reached" id="">
             <option value="call us">call us </option>
             <option value="email">email</option>
           </select>
 
           <br />
           <h6 className="hometown">Hometown</h6>
-          <select className="reached-inquire" name="" id="">
+          <div className="row">
+            <div className="col">
+
+            </div>
+            <div className="col">
+
+            </div>
+          </div>
+          <div 
+          style={{paddingLeft:"40px"}}
+          >
+          <select className="" name="" id="">
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
@@ -121,6 +132,7 @@ function Membership() {
             <option value=""></option>
           </select>
             <input className="countryInput" type="text" placeholder="" />
+          </div>
             <p className="reached-inquire pt-5 p-1">How often do you travel?</p>
             <input className="emptyInput" type="text" placeholder="" />
             <p className="reached-inquire p-1">What benefits of Membership are you most interested in?</p>

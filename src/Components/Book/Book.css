@@ -2,19 +2,21 @@
         overflow-x: hidden;
 }
 .round-edit{
-    width: 90%;
-    margin: auto;
+    /* width: 90%; */
     margin-top: 60px;
     padding-top:50px;
     padding-bottom:50px;
-    
+    margin-left: 50px;
+    margin-right: 10px;
 }
 .round-img{
     border-radius: 50%;
-    width: 80%;
-    height: 85%;
+    width: 90%;
+    height: 250px;
     clear: both;
+    object-fit: cover;
 }
+  
 .video-edit{
     width: 90%;
     margin: auto;

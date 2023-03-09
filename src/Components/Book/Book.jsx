@@ -44,7 +44,7 @@ function Book() {
                         <label>Name</label>
                         <div className="row ">
                             <div className="col-md-6">
-                                <input type="text" name="first_name" className="b-Input w-100" placeholder="First Name " />
+                                <input type="text" name="first_name" className="b-Input w-100 mb-3" placeholder="First Name " />
                             </div>
                             <div className="col-md-6">
                                 <input type="text" name="last_name" className="b-Input w-100" placeholder="Last Name " />
@@ -63,9 +63,9 @@ function Book() {
                     
                     <div className="mt-5">
                     <h5>Flight Information</h5><br />
-                        <label className="px-3"><input type="radio" className="mx-2" />One Way</label>
+                        <label className="px-3"><input type="radio" className="mx-1" />One Way</label>
 
-                        <label className="px-3"><input type="radio" className="mx-2 " />Round Trip</label>
+                        <label className="px-3"><input type="radio" className="mx-1 " />Round Trip</label>
 
                         <div className="edit-margin">
                             <label>Date of Departure</label><br />
@@ -135,7 +135,7 @@ function Book() {
 
                         <div className="edit-margin">
                             <label>No of Passengers</label><br />
-                            <input  name='passengers' type="number" className="b-Input" placeholder="0" />
+                            <input  name='passengers' type="number" className="b-Input w-50" placeholder="0" />
                         </div>
                         <div className='butt-on mt-5'>
                         <button className='buttonInput' type="submit" >Submit</button>
@@ -144,11 +144,11 @@ function Book() {
                 </form>
                 </div>
 
-                <div className="row round-edit mx-auto">
-                    <div className="col-md-3"><img className="round-img" src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/629bbf1c-f877-45fd-860a-c33fbabac21c/Bigstock_+103020313+-+Luxury+At+33K+Feet.jpg?format=750w" alt="" /></div>
-                    <div className="col-md-3"><img className="round-img" src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/1d112a62-9ee1-4c19-a86a-ef7b517e1cd1/Private%2BJet%2BMembership.jpeg?format=500w" alt="" /></div>
-                    <div className="col-md-3"><img className="round-img" src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/10fd4be2-4307-4a3a-88be-a33bbf3d35d4/%2314HOWTHE1%25.jpg?format=750w" alt="" /></div>
-                    <div className="col-md-3"><img className="round-img" src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/6edd37aa-a363-4cb9-a721-3f4f532788dc/Bigstock_+103020331+-+Jet+Set+Power+Lunch.jpg?format=750w" alt="" /></div>
+                <div className="row round-edit">
+                    <div className="col-md-3"><img className="round-img " src="https://media.gettyimages.com/id/1215188245/photo/woman-walking-the-aisle-on-plane.jpg?s=612x612&w=0&k=20&c=gJXxlDgznGxYH3APvaHBwUcgEuuTWGsHZSuqqt-nu5E=" alt="" /></div>
+                    <div className="col-md-3"><img className="round-img " src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/1d112a62-9ee1-4c19-a86a-ef7b517e1cd1/Private%2BJet%2BMembership.jpeg?format=500w" alt="" /></div>
+                    <div className="col-md-3"><img className="round-img " src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/10fd4be2-4307-4a3a-88be-a33bbf3d35d4/%2314HOWTHE1%25.jpg?format=750w" alt="" /></div>
+                    <div className="col-md-3"><img className="round-img " src="https://images.squarespace-cdn.com/content/v1/5a05c910017db256055decc2/6edd37aa-a363-4cb9-a721-3f4f532788dc/Bigstock_+103020331+-+Jet+Set+Power+Lunch.jpg?format=750w" alt="" /></div>
                 </div>
                 
             </div>

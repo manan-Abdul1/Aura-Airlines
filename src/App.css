@@ -411,17 +411,17 @@ ul li:before {
     }
 
     .hometown {
-        padding-top: 50px;
+        padding-top: 20px;
         padding-left: 35px;
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         /* font: small-caps bold 20px/1 sans-serif; */
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .countryInput {
-        margin-right: 10px;
+        /* margin-right: 10px; */
         width: 83%;
         padding: 3px;
         background: #fff;
@@ -464,8 +464,8 @@ ul li:before {
         }
 
         .article-destination {
-            margin-left: 150px;
-            margin-top: 30px;
+            margin-left: 110px;
+            margin-top: 40px;
         }
 
         .all-article {
@@ -492,9 +492,7 @@ ul li:before {
             }
 
             @media(max-width:576px) {
-                .all-article {
-                    padding-right: 120px;
-                }
+                
                 .desciritionTextb-Membership{
                     margin-bottom: 20px;
                     width: 90%;
@@ -502,8 +500,10 @@ ul li:before {
                 }
 
                 .desciritionText-Membership {
-                    padding: auto;
-                    font-size: 35px;
+                    text-align: center;
+                    margin: auto;
+                    width: auto;
+                    font-size: 25px;
                 }
                 .desciritionColor-about{
                     margin: auto;
@@ -519,19 +519,19 @@ ul li:before {
                 .lastInput-Inquire{
                     width: 50%;
                     margin-left: 50px;
-
                 }
                 .emailInput-Inquire{
                     width: 70%;
                 }
                 .reached-inquire {
-                    margin: 8px 15px;
+                    margin: 8px 25px;
                 }
                 .countryInput{
-                    width: auto;
+                    margin-right: 8px;
                 }
                 .emptyInput{
-                    width: auto;
+                    /* margin-left: 20px; */
+                    width: 60%;
                 }
                 .buttonin-inquire{
                     width: auto;
@@ -561,27 +561,66 @@ ul li:before {
                 .buttonInput{
                     width: auto;
                 }
-               .img-tittle{
-                position: static;
-                /* font-size: 5px; */
+                .members .img-tittle{
+                /* position: static; */
+                font-size: 30px;
                 text-align: center;
                 margin-top: 90px;
+               }
+               .Membership .inputInquiry{
+                width: auto;
+                margin: auto;
                }
                .container .border-secondary{
                 width: 82%;
                }
-               .destin .img-tittle {
-                position: static;
-                text-align: center;
-                margin-top: 140px;
-                margin-left: 50px;
+               .Destination .destin .img-tittle {
+                    text-align: center;
+                    margin-top: 140px;
+                    margin-left: 50px;
+                    font-size: 25px;
                 }
-                .img-title h1{
-                position: static;
-                text-align: center;
-                font-size: 5px;
-                margin-top: 140px;
-                margin-left: 100px;
+                .Destination .destin .tittle-about{
+                    font-size: 25px;
+                    text-align: center;
+                    margin-top: 10px; 
+                }
+                .margin1 .img-title h1{
+                    text-align: center;
+                    font-size: 35px;
+                    margin-top: 252px;
+                    margin-left: 100px;
+                }
+                .Inquire .inquiry .tittle-Inquire{
+                    font-size: 35px;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                .article-destination{
+                    margin-left: 70px;
+                    margin-right: 50px;
+                }
+                .newsletter{
+                    margin: auto;
+                    width: 72%;
+                }
+                .round-edit .round-img{
+                    margin-bottom: 40px;
+                }
+                 
+                .text-part .text-part1{
+                    font-size: 14px;
+                    width: auto;
+                    margin: auto;
+                }
+                .border-secondary{
+                    width: auto;
+                }
+                .About .margin{
+                    margin: 30px;
+                }
+                .About .borber{
+                    margin: 30px;
                 }
 
 }
