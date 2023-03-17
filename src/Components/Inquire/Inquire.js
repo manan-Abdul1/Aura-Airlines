@@ -50,7 +50,26 @@ function Inquire() {
             </h1>
 
         </div>
-        <div className="container">
+        <div className="inquireCard">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 inquireCardLeft" style={{backgroundColor:'white'}}>
+                <img 
+                 src="https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg" 
+                 alt="" width="100%" height="400" />    
+              </div>
+              <div className="col-md-6 inquireCardRight">
+                  <h5 className="Immediate">For Immediate Assistance</h5>
+                  <h4 className="p-1">Phone</h4>
+                  <h6 className="p-1">+93111111444</h6>
+                  <h4 className="p-1">Email</h4>
+                  <h6 className="p-1">auraairlines.com</h6>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        {/* <div className="container">
           <div className="card border-secondary my-5 text-center">
             <div class="card-body text-secondary">
               <h5 className="Immediate">For Immediate Assistance</h5>
@@ -60,9 +79,92 @@ function Inquire() {
               <h6 className="p-1">auraairlines.com</h6>
             </div>
             </div>
-        </div>
-        <div className="Inquirey">
-        <div className="firstForm-inquire">
+        </div> */}
+        <div className="contact-card1">
+                <h3 className="sm-heading">We're with You Always</h3>
+                <div className='book-part contact1'>
+                    <form onSubmit={sendEmailContact}>
+                        <div className='row'>
+                            <div className='col-md-6'>
+                                <label>First Name*</label><br />
+                                <input className='b-Input w-100' name='first_name' type="text" required />
+                            </div>
+
+                            <div className='col-md-6'>
+                                <label>Last Name*</label><br />
+                                <input  className='b-Input w-100' name='last_name'  type="text" required />
+                            </div>
+                            
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label >Email Address*</label><br />
+                                    <input  className='b-Input w-100' name='email' type="email" required />
+                                </div>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label>Phone No*</label><br />
+                                    <input  className='b-Input w-100' name='phone_number' type="text" required />
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className='edit-margin'>
+                                    <label >Message*</label><br />
+                                    <textarea  className="b-Input w-100" name='message' cols="30" rows="10" required></textarea>
+                                </div>
+                            </div>
+                            <div className="edit-margin col-md-6">
+                              <label>How Do You Wish To Be Reached? *</label>
+                              <div className="" 
+                              style={{textAlign: 'right',marginTop:'10px',paddingRight:'50px'}}
+                              >
+                              <select className="reachedInquire" name="contact" id="">
+                                <option value="call us">Call us </option>
+                                <option value="email">Email</option>
+                              </select>
+                              </div>
+                            </div>
+                            <div className='butt-on'>
+                                    <button className='buttonInput w-25'>Send</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                </div>
+
+        {/* Newsletter */}
+        <div className="container-fluid newsletter">
+                    <div className="row">
+                        <div className="col-md-6 my-auto newsletterLeft">
+                            <h3 className='sm-heading text-white'>Sign Up to Our Newsletter</h3>
+                            <p className="p text-center text-white">
+                                <b>We Respect Your Privacy and  it's  Our Priority.</b>
+                            </p>
+                        </div>
+                        <div className="col-md-6 newsletterRight">
+                        <form onSubmit={sendEmail}>
+
+                            <div className='edit-margin'>
+                                <label>Name*</label><br />
+                                <input  className="b-Input w-100" name='to_name' type="text" required />
+                            </div>
+
+                            <div className='edit-margin'>
+                                <label >Email Address*</label><br />
+                                <input className="b-Input w-100" name='email' type="email" required />
+                            </div>
+
+                            <div className='butt-on'>
+                                <button className='buttonInput '>Subscribe</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+      </div>
+              {/* <div className="firstForm-inquire">
         <h2 className="headinng-Inquire p-5">We're with You Always</h2>
 
         <div className="inputs-Inquire">
@@ -102,24 +204,7 @@ function Inquire() {
           </div>
         </form>
         </div>
-        </div>
-        <h2 className="headinng-Inquire mt-5 p-5">Sign Up to Our  Newsletter</h2>
-        <div className="inputs-Inquire mt-5">
-        <h3 className="headinng0-Inquire p-5">We Respect Your Privacy and  it's  Our Priority</h3>
-        <form onSubmit={sendEmail}>
-        <h5 className="name-Inquire">Name *</h5>
-          <input className="emailInput-Inquire" name='to_name' type="text" placeholder="" />
-          <br />
-          <h5 className="name-Inquire pt-3">Email Address *</h5>
-          <input className="emailInput-Inquire" name='email' type="text" placeholder="" />
-          <div className="button-inquire">
-          <button className="buttonin-inquire"> Subscribe </button>
-          </div>
-          {/* <input className="button buttonin-inquire" type="submit" value="Subscribe"></input></div> */}
-        </form>
-        </div>
-      </div>
-      </div>
+        </div>*/}
       <Footer />
     </>
   );

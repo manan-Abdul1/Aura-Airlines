@@ -24,3 +24,12 @@ td .buttonInput:hover{
     font-family: "Times New Roman", Times, serif;
     font-size: 2.5em;
 }
+.buttonOffers{
+            padding: 18px;
+            font-size: 12px;
+            font-family: "Raleway"; 
+            background-color: #4b2c7b;
+            color: white;
+            border-radius: 5px;
+            outline: none;
+}

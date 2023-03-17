@@ -1,7 +1,6 @@
 * {
     overflow-x: hidden;
 }
-
 p {
     text-align: justify;
     /* padding: 0px 10px 10px 10px; */
@@ -11,13 +10,13 @@ p {
     text-decoration: underline;
 }
 .quick-links li p a:hover{
-    color: #5BC0F8;
+    color: #d41c64;
 }
 .btn-floating {
     color: white;
 }
 .btn-floating:hover{
-    color: #5BC0F8;
+    color: #d41c64;
 }
 
 .borber{
@@ -26,32 +25,26 @@ p {
 .services{
     margin: 20px
 }
+.footer {
+    text-align: center;
+}
 
-    .row-edit {
-        justify-content: center;
-        margin: auto;
-    }
+.tittle {
+    font-family: 'gotham-black';
+}
 
-    .footer {
-        text-align: center;
-    }
+.firstInput {
+    margin-right: 10px;
+    width: 20%;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .12);
+    font-family: inherit;
+    font-size: 15px;
+    line-height: normal;
+    outline: none;
 
-    .tittle {
-        font-family: 'gotham-black';
-    }
-
-    .firstInput {
-        margin-right: 10px;
-        width: 20%;
-        padding: 1em;
-        background: #fff;
-        border: 1px solid rgba(0, 0, 0, .12);
-        font-family: inherit;
-        font-size: 15px;
-        line-height: normal;
-        outline: none;
-
-    }
+}
 
     .lastInput {
         margin-right: 10px;
@@ -79,23 +72,17 @@ p {
 
     .buttonInput {
         /* width: 20% ; */
-        padding: 12px;
+        padding: 15px;
         /* background: #fff; */
         border: 2px solid;
         font-size: 15px;
-        font-family: "eurostile-condensed"; 
-        color: royalblue;
-        background-color: white;
+        font-family: "Raleway"; 
+        color: white;
+        background-color: #4b2c7b;
         border-radius: 5px;
     }
 
-    .buttonInput:hover {
-        background-color: royalblue;
-        color: white;
-        border: 2px solid;
-    }
-
-    .p {
+     .p {
         margin: 28px 0;
         padding: 0;
         font-size: 13px !important;
@@ -136,13 +123,14 @@ p {
 
     .sm-heading {
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif !important;
+        font-family: 'Raleway', sans-serif !important;
         font-weight: 700 !important;
-        margin: 50px 0px 50px 0px;
+        margin: 100px 0px 40px 0px;
+        color: #4b2c7b;
     }
 
     label {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Raleway', 'Roman' sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -162,6 +150,7 @@ p {
         font-family: inherit;
         font-size: 15px;
         line-height: normal;
+        outline: none;
     }
 
     .edit-margin {
@@ -339,21 +328,6 @@ p {
         padding-bottom: 20px;
     }
 
-    .buttonin-inquire:hover {
-        background-color: black;
-        color: white;
-    }
-
-    .buttonin-inquire {
-        width: 15%;
-        padding: 12px;
-        background: #fff;
-        border: 2px solid;
-        font-size: 15px;
-        font-family: "eurostile-condensed";
-        border-radius: 5px;
-    }
-
     .headinng0-Inquire {
         text-align: center;
         padding-top: 30px;
@@ -422,7 +396,7 @@ ul li:before {
 
     .countryInput {
         /* margin-right: 10px; */
-        width: 83%;
+        width: 88%;
         padding: 3px;
         background: #fff;
         border: 1px solid black;
@@ -527,7 +501,8 @@ ul li:before {
                     margin: 8px 25px;
                 }
                 .countryInput{
-                    margin-right: 8px;
+                    width: 60%;
+                    /* margin-right: 8px; */
                 }
                 .emptyInput{
                     /* margin-left: 20px; */
@@ -559,7 +534,8 @@ ul li:before {
                     margin: 5px 0px 15px 0px;
                 }
                 .buttonInput{
-                    width: auto;
+                    margin: 0;
+                    padding: 10px;
                 }
                 .members .img-tittle{
                 /* position: static; */
@@ -621,6 +597,9 @@ ul li:before {
                 }
                 .About .borber{
                     margin: 30px;
+                }
+                .butt-on{
+                    padding: 0;
                 }
 
 }

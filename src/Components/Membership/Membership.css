@@ -43,3 +43,71 @@
     line-height: 2;
     font-size: 15px;
 }
+.reachedInquire{
+    padding: 5px;
+    /* margin-top: 15px; */
+    /* font-size: 20px; */
+    font-family: 'Raleway', Times, serif;
+    /* font-weight: bold; */
+    /* margin-left: 40px; */
+}
+.buttonInputSend1{
+    margin-top: 15px;
+    padding: 12px;
+    border: 2px solid;
+    font-size: 15px;
+    color: white;
+    background-color: #4b2c7b;
+    border-radius: 5px;
+}
+.btnSend1{
+    margin-right: 20px;
+    text-align: right;
+}
+.edit-margi{
+    margin-top: 15px;
+}
+.memberCard{
+    margin-top: 100px;
+    padding: 0px 150px 100px 150px;
+    background-color: rgb(245, 245, 245);
+    font-family: "Raleway",sans-serif;    
+}
+.memberCard h5{
+    color: #4b2c7b;
+}
+.memberCardLeft{
+}
+.memberCard img{
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 12px 5px 5px  #888;
+    margin-bottom: 5px;
+}
+.memberCardRight{
+    padding: 70px;
+    background-color: white;
+    height: 400px;
+    margin-left: -12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 2px  #888;
+}
+@media (max-width:576px) {
+    .memberCard{
+        padding: 0;
+    }
+    .memberCardLeft{
+        width: 100%;
+        background-size: cover;
+    }
+    .memberCardRight{
+        text-align: justify;
+        margin-left: 10px;
+        padding: 50px;
+        margin-bottom: 5px;
+        /* width: 100%; */
+        /* padding: 60px; */
+    }
+}

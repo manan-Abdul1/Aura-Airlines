@@ -10,9 +10,50 @@
     font-size: 55px;
     color: azure;
 }
-.border-secondary{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.inquireCard{
+    color: #4b2c7b;
+    margin-top: 100px;
+    padding: 100px 150px 100px 170px;
+    background-color: rgb(245, 245, 245);
+    font-family: "Raleway",sans-serif;   
+}
+.inquireCardLeft{
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 12px 5px 5px  #888;
+    margin-bottom: 5px;
+
+}
+.inquireCardRight{
+    background-color: white;
+    height: 400px;
+    padding: 55px;
+    width: 45%;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 2px  #888;
+}
+.inquireCardRight h6{
+    color: black;
 }
 
+@media (max-width:576px) {
+    .inquireCard{
+        padding: 0;
+    }
+    .inquireCardLeft{
+        width: 100%;
+        background-size: cover;
+    }
+    .inquireCardRight{
+        width: 100%;
+        text-align: justify;
+        margin-left: 10px;
+        padding: 50px;
+        margin-bottom: 5px;
+        /* width: 100%; */
+        /* padding: 60px; */
+    }
+}

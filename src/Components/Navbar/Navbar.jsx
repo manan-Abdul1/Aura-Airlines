@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <>     
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg bg-gradient">
                 <div className="container-fluid">
                     <Link className="navbar-brand brand-edit" to="/"><img className="logo-edit" src="./airlogo.png" alt="logo-name" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@ function Navbar() {
                                 </li>
 
                                 <li className="nav-item  edit ">
-                                    <Link className="nav-link active float-right" aria-current="page" to="/Air">Aircraft Guide</Link>
+                                    <Link className="nav-link  active float-right" aria-current="page" to="/Air">Aircraft Guide</Link>
                                 </li>
 
 

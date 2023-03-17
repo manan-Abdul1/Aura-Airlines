@@ -13,7 +13,7 @@ function Book() {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_ytqgg7y', 'template_rj54jw8', e.target, 'ua3xOIc_sBj-iyTME')
+        emailjs.sendForm('service_ytqgg7y', 'template_rj54jw8', e.target, 'T5MbXT3uasqd-OA3z')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -36,45 +36,48 @@ function Book() {
                 <iframe width="100%" height="460" src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
                 </div>
+                <div className="container-fluid flight">
+                <form onSubmit={sendEmail}>
                 <h3 className="sm-heading">Tells Us Your Travel Plans</h3>
-                
-                <div className="container flight">
-                <h5>Personal Information</h5><br />
-                    <form onSubmit={sendEmail} >
-                        <label>Name</label>
+                <div className="row">
+                    <div className="flightInfo1 col-md-5">
+                    <h5>Personal Information</h5><br />
                         <div className="row ">
-                            <div className="col-md-6">
-                                <input type="text" name="first_name" className="b-Input w-100 mb-3" placeholder="First Name " />
+                            <div className="col-md-12 d-flex flex-column">
+                                <label>First Name</label>
+                                <input type="text" name="first_name" className="b-Input w-75 mt-1" placeholder="First Name " />
                             </div>
-                            <div className="col-md-6">
-                                <input type="text" name="last_name" className="b-Input w-100" placeholder="Last Name " />
+                            
+                            <div className="col-md-12 d-flex flex-column mt-3">
+                                <label>Last Name</label>
+                                <input type="text" name="last_name" className="b-Input w-75 mt-1" placeholder="Last Name " />
                             </div>
                         </div>
 
                         <div className="edit-margin">
                             <label>Phone Number</label><br />
-                            <input type="tel" className="b-Input w-100" placeholder="+923+++++++++" />
+                            <input type="tel" className="b-Input w-75" placeholder="+923+++++++++" />
                         </div>
 
                         <div className="edit-margin">
                             <label>Email Address</label><br />
-                            <input type="text" email='email' name="email" className="b-Input w-100" placeholder="John@gmail.com" />
+                            <input type="text" email='email' name="email" className="b-Input w-75" placeholder="John@gmail.com" />
                         </div>
-                    
-                    <div className="mt-5">
+                    </div>
+                    <div className="col-md-7 flightInfo2">
+                    {/* <div className='flightInfo'> */}
                     <h5>Flight Information</h5><br />
-                        <label className="px-3"><input type="radio" className="mx-1" />One Way</label>
-
-                        <label className="px-3"><input type="radio" className="mx-1 " />Round Trip</label>
+                        <label className=""><input type="radio" className="mx-1" />One Way</label>
+                        <label className="mx-2"><input type="radio" className="mx-1" />Round Trip</label>
 
                         <div className="edit-margin">
                             <label>Date of Departure</label><br />
-                            <input name="date" type="date" className="b-Input w-50" />
+                            <input name="date" type="date" className="b-Input w-75" />
                         </div>
 
                         <div className="edit-margin">
                             <label>Departure City</label><br />
-                            <select name="departure_city" className="b-Input w-50">
+                            <select name="departure_city" className="b-Input w-75">
                                 <option>Galle</option>
                                 <option>Tangalle</option>
                                 <option>Koggala</option>
@@ -97,7 +100,7 @@ function Book() {
 
                         <div className="edit-margin">
                             <label>Destination City</label><br />
-                            <select name="destination_city" className="b-Input w-50">
+                            <select name="destination_city" className="b-Input w-75">
                                 <option>Galle</option>
                                 <option>Tangalle</option>
                                 <option>Koggala</option>
@@ -135,12 +138,14 @@ function Book() {
 
                         <div className="edit-margin">
                             <label>No of Passengers</label><br />
-                            <input  name='passengers' type="number" className="b-Input w-50" placeholder="0" />
+                            <input  name='passengers' type="number" className="b-Input w-75" placeholder="0" />
                         </div>
-                        <div className='butt-on mt-5'>
-                        <button className='buttonInput' type="submit" >Submit</button>
+                        <div className='btnSend'>
+                        <button className='buttonInputSend' type="submit" >Submit</button>
                         </div> 
-                </div>
+                        {/* </div> */}
+                    </div>
+                </div>  
                 </form>
                 </div>
 

@@ -4,8 +4,17 @@ import Footer from "../Footer/Footer";
 
 function Home() {
     const topContainer = useRef();
+    const aboutUsContainer = useRef();
+    const comeFlyUsContainer = useRef();
+
         useEffect(() => {
           topContainer.current.scrollIntoView({ block: "end", behavior: 'smooth' });
+          setTimeout(() => {
+              aboutUsContainer.current.style.opacity = 1;
+          }, 800);
+          setTimeout(() => {
+            comeFlyUsContainer.current.style.opacity = 1;
+          }, 4000);
           }, []);
 
     return (
@@ -20,14 +29,14 @@ function Home() {
                 data-bs-ride="carousel"
             >
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item ">
                         <img
                             src="https://i.ytimg.com/vi/maufDGFgCZo/maxresdefault.jpg"
                             className="d-block w-100"
                             alt="..."
                         />
                     </div>
-                    <div className="carousel-item active">
+                    <div className="carousel-item ">
                         <img
                             src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
                             className="d-block w-100"
@@ -67,50 +76,112 @@ function Home() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="text-part container">
+
+
+         {/* About US Container */}
+            
+            <h3 className="sm-heading mx-auto font-weight-bold display-6">About Us</h3>
+            <div className="container aboutUS m-5" ref={aboutUsContainer}>
+                <div className="row">
+                    <div className="col-md-6">
+                   
+                    <div className="row">
+                        <div className="col-md-6">
+                        <img
+                            className="w-100"
+                            src="https://wallpaper.dog/large/10792457.jpg"
+                            height='400px'
+                        />
+                        </div>
+                        <div className="col-md-6 d-flex flex-column">
+                        <img className="w-100"
+                            src="https://wallpaper.dog/large/10792479.jpg"  
+                            height='195px'
+                            />
+                            <img
+                            className="mt-1 w-100"
+                            src="https://wallpaper.dog/large/10792493.jpg"
+                            alt=""
+                            height='200px'
+                        />
+                        </div>
+                    </div>
+
+                    </div>
+                    <div className="col-md-6 my-auto">
+                        <p className="text-part1">
+                        Aura Airlines is a concept conglomerate in the Airline Industry in Sri Lanka which was founded in 2018 and dedicates its approach mainly 
+                        to uplift Airline services solely for the benefit of the entire community. Private & Business Airline, as an exclusive platform which customers 
+                        can benefit from in the fields of Leisure, Corporate and VIP transport solutions, and service for both domestic and international market.
+
+                    </p>
+                    <div className="row button-text" >
+                        <div className="col-md-4 ">
+                            <button className="buttonInput1 bg-gradient" type="submit" value="Subscribe">
+                                Inquire Now
+                            </button>
+                        </div>
+                        <div className="col-md-4">
+                            <button className="buttonInput2 bg-gradient" type="submit" value="Subscribe">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+             </div>
+
+
+            {/* <div className="text-part container">
                 <p className="text-center container text-part1">
                     Aura Airlines is a concept conglomerate in the Airline Industry in Sri Lanka which was founded in 2018 and dedicates its approach mainly 
                     to uplift Airline services solely for the benefit of the entire community. Private & Business Airline, as an exclusive platform which customers 
                     can benefit from in the fields of Leisure, Corporate and VIP transport solutions, and service for both domestic and international market.
 
                 </p>
-                <div className="row row-edit  text-center" >
+                <div className="row button-text text-center" >
                     <div className="col-md-2 my-auto">
-                        <button className="buttonInput " type="submit" value="Subscribe">
+                        <button className="buttonInput bg-gradient" type="submit" value="Subscribe">
                             Inquire Now
                         </button>
                     </div>
                     <div className="col-md-2 my-3">
-                        <button className="buttonInput" type="submit" value="Subscribe">
+                        <button className="buttonInput bg-gradient" type="submit" value="Subscribe">
                             Book Now
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            {/* AboutUS container End */}
+
+{/* Come Fly With us Container Start */}
             {/* 1 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 marg mx-3">
+            <div className="come-fly-container" ref={comeFlyUsContainer}>
+            <h3 className="sm-heading mx-auto font-weight-bold display-6">Come fly with us!</h3>
+            <div className="row row-edit">
+                <div className="col-md-5 mx-3">
                     <img
-                        className="d-block w-100"
+                        className="d-block "
                         src="https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?b=1&s=170667a&w=0&k=20&c=F3PSMzB2x-pI-ctwUEGTY4jvnRYIi3PgCheBiCu8Y7Q="
                         alt=""
+                        height='330px'
                     />
                 </div>
                 <div className="col-md-5 mx-3 my-auto">
                     <p>
                         <h5>Our Services</h5>
                         <ul>
-                            <li>&rarr; Corporate VIP/VVIP Client</li>
-                            <li>&rarr; Passenger Charter</li>
-                            <li>&rarr; Leisure</li>
-                            <li>&rarr; Aerial Work</li>
-                            <li>&rarr; Branding and Advertising</li>
-                            <li>&rarr; Medical Evacuation</li>
-                            <li>&rarr; Special Events-Product Launches</li>
-                            <li>&rarr; Flower Drops</li>
-                            <li>&rarr; Banner Towing/ Flag Displays</li>
-                            <li>&rarr; Wedding Photography</li>
-                            <li>&rarr; Celebrations</li>
+                            <li><i class="arrow right"></i> Corporate VIP/VVIP Client</li>
+                            <li><i class="arrow right"></i> Passenger Charter</li>
+                            <li><i class="arrow right"></i> Leisure</li>
+                            <li><i class="arrow right"></i> Aerial Work</li>
+                            <li><i class="arrow right"></i> Branding and Advertising</li>
+                            <li><i class="arrow right"></i> Medical Evacuation</li>
+                            <li><i class="arrow right"></i> Special Events-Product Launches</li>
+                            <li><i class="arrow right"></i> Flower Drops</li>
+                            <li><i class="arrow right"></i> Banner Towing/ Flag Displays</li>
+                            <li><i class="arrow right"></i> Wedding Photography</li>
+                            <li><i class="arrow right"></i> Celebrations</li>
                             {/* <li>Anniversary Celebrations</li>
                             <li>Birthday Celebrations</li>
                             <li>Any other as required</li> */}
@@ -125,36 +196,37 @@ function Home() {
                     <p>
                         <h5>Why Aura Airlines Charter?</h5>
                         <ul>
-                        &rarr; Island wide Coverage <br />
-                        &rarr; Anytime, Anywhere <br />
-                        &rarr;  Available 24/7/365 <br />
-                        &rarr;  Best value for money <br />
-                        &rarr;  Ensure Safety, Security and Privacy <br />
-                        &rarr;  Full of Comfort, Luxury and Convenience <br />
-                        &rarr;   To fly happily <br />
-                        &rarr;   Guaranteed customer satisfaction <br />
-                        &rarr;   Preeminent and Personalized Service <br />
-
-
+                        <i class="arrow right"></i> Island wide Coverage <br />
+                        <i class="arrow right"></i> Anytime, Anywhere <br />
+                        <i class="arrow right"></i>  Available 24/7/365 <br />
+                        <i class="arrow right"></i>  Best value for money <br />
+                        <i class="arrow right"></i>  Ensure Safety, Security and Privacy <br />
+                        <i class="arrow right"></i>  Full of Comfort, Luxury and Convenience <br />
+                        <i class="arrow right"></i>   To fly happily <br />
+                        <i class="arrow right"></i>   Guaranteed customer satisfaction <br />
+                        <i class="arrow right"></i>   Preeminent and Personalized Service <br />
                         </ul>
                     </p>
                 </div>
-                <div className="col-md-5 marg mx-3">
+                <div className="col-md-5 mx-3">
                     <img
-                        className="d-block w-100 h-100"
+                        className="d-block w-100 "
                         src="https://images.unsplash.com/photo-1566822777822-0b43388beaba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                         alt=""
+                        height='330px'
                     />
                 </div>
             </div>
 
             {/* 3 */}
-            <div className="row row-edit my-5">
-                <div className="col-md-5 marg mx-3">
+            <div className="row row-edit">
+                <div className="col-md-5 mx-3">
                     <img
                         className="d-block w-100"
                         src="https://images.unsplash.com/photo-1539201299177-2af0fae3d77f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                         alt=""
+                        height='330px'
+
                     />
                 </div>
                 <div className="col-md-5 mx-3 my-auto">
@@ -167,7 +239,7 @@ function Home() {
             </div>
 
             {/* 4 */}
-            <div className="row row-edit my-5">
+            <div className="row row-edit ">
                 <div className="col-md-5 mx-3 my-auto">
                     <h5>Dedication</h5>
                     <p>
@@ -177,14 +249,17 @@ function Home() {
                     transport for domestic air travel among tourists, corporate clients, and locals.
                     </p>
                 </div>
-                <div className="col-md-5 marg mx-3">
+                <div className="col-md-5 mx-3">
                     <img
                         className="d-block w-100"
                         src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                         alt=""
+                        height='330px'
                     />
                 </div>
             </div>
+           </div>
+
 
 {/* Article start */}
 

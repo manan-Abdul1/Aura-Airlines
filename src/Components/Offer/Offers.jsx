@@ -111,7 +111,7 @@ function Offers() {
                             <td>Jaffina</td>
                             <td>13.02.2023</td>
                             <td>28.02.2023</td>
-                            <td><button className="buttonInput" 
+                            <td><button className="buttonOffers" 
                             style={{padding: '3px'}} onClick={handleRequestDetails}> Request Details</button></td>
                         </tr>
                         <tr>
@@ -121,7 +121,7 @@ function Offers() {
                             <td>Jaffina</td>
                             <td>13.02.2023</td>
                             <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
+                            <td><button className="buttonOffers" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
                         </tr>
                         <tr>
                             <td>c</td>
@@ -130,7 +130,7 @@ function Offers() {
                             <td>Jaffina</td>
                             <td>13.02.2023</td>
                             <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
+                            <td><button className="buttonOffers" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
                         </tr>
                         <tr>
                             <td>d</td>
@@ -139,7 +139,7 @@ function Offers() {
                             <td>Jaffina</td>
                             <td>13.02.2023</td>
                             <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
+                            <td><button className="buttonOffers" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
                         </tr>
                         <tr>
                             <td>e</td>
@@ -148,7 +148,7 @@ function Offers() {
                             <td>Jaffina</td>
                             <td>13.02.2023</td>
                             <td>28.02.2023</td>
-                            <td><button className="buttonInput" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
+                            <td><button className="buttonOffers" style={{padding: '3px', marginLeft:'4px'}} onClick={handleRequestDetails}>Request Details</button></td>
                         </tr>
                     </tbody>
                 </table>

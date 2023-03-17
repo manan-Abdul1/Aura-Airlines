@@ -12,7 +12,7 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_ytqgg7y', 'template_l8zfg1m', e.target, 'ua3xOIc_sBj-iyTME')
+        emailjs.sendForm('service_ytqgg7y', 'template_l8zfg1m', e.target, 'T5MbXT3uasqd-OA3z')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -94,6 +94,7 @@ function Contact() {
                     </button>
                 </div>
                 </div>
+                <div className="contact-card">
                 <h3 className="sm-heading">We're with You Always</h3>
                 <div className='book-part contact1'>
                     <form onSubmit={sendEmailContact}>
@@ -128,15 +129,45 @@ function Contact() {
                                 </div>
                             </div>
                             <div className='butt-on'>
-                                    <button className='buttonInput'>Send</button>
+                                    <button className='buttonInput w-25'>Send</button>
                             </div>
 
                         </div>
                     </form>
-
+                </div>
                 </div>
 
-                <div className="container">
+                <div className="container-fluid newsletter">
+                    <div className="row">
+                        <div className="col-md-6 my-auto newsletterLeft">
+                            <h3 className='sm-heading text-white'>Sign Up to Our Newsletter</h3>
+                            <p className="p text-center text-white">
+                                <b>We respect your privacy.</b>
+                            </p>
+                        </div>
+                        <div className="col-md-6 newsletterRight">
+                        <form onSubmit={sendEmail}>
+
+                            <div className='edit-margin'>
+                                <label>Name</label><br />
+                                <input  className="b-Input w-100" name='to_name' required type="text" />
+                            </div>
+
+                            <div className='edit-margin'>
+                                <label >Email Address</label><br />
+                                <input className="b-Input w-100" name='email' required type="email" />
+                            </div>
+
+                            <div className='butt-on'>
+                                <button className='buttonInput '>Subscribe</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* <div className="container">
                     <div className="row newsletter">
                         <div className="col-md-6 my-4">
                             <h3 className='sm-heading'>Sign Up to Our Newsletter</h3>
@@ -163,7 +194,7 @@ function Contact() {
                         </form>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 
             </div>
             <Footer/>
