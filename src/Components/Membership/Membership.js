@@ -52,7 +52,7 @@ function Membership() {
 
           <div className="memberCard">
           <div className="container">
-            <h3 className='sm-heading' >Membership has it's  Privileges & Last for an Eternity.</h3>
+            <h3 className='sm-heading' >Membership has it's Privileges & Last for an Eternity.</h3>
             <div className="row">
               <div className="col-md-6 memberCardLeft">
                 <img 

@@ -21,17 +21,17 @@ function Home() {
                                 alt="..."
                             />
                         </div>
-                        <div className="carousel-item active">
+                        <div className="carousel-item">
                             <img
                                 src="https://i.pinimg.com/originals/23/ed/d8/23edd8ffb4cea75191489e1dc9c598f2.jpg"
                                 className="d-block w-100 h-75"
                                 alt="..."
                             />
                         </div>
-                        <div className="carousel-item active">
+                        <div className="carousel-item">
                             <img
                                 src="https://wallpaperaccess.com/full/254381.jpg"
-                                className="d-block w-100"
+                                className="d-block w-100 h-75"
                                 alt="..."
                             />
                         </div>

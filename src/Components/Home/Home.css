@@ -122,6 +122,11 @@
     background-color: #ddd;
     border-color: #ddd;
   }
+  @media(max-width:576px) {
+    .aboutUS{
+      width: auto;
+    }
+  }
   /* Section */
   /* section {
     opacity: 0;

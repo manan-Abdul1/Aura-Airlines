@@ -84,7 +84,6 @@ function Home() {
             <div className="container aboutUS m-5" ref={aboutUsContainer}>
                 <div className="row">
                     <div className="col-md-6">
-                   
                     <div className="row">
                         <div className="col-md-6">
                         <img

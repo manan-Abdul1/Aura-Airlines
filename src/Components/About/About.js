@@ -28,26 +28,28 @@ function About() {
         </div>
         </div>
         <div className='row descirition margin'>
-            <div className='col-md-5 my-auto'>
+            <div className='col-md-6 my-auto'>
                 <h2 className='p-1'>Our Mission</h2>
                 <p className='desciritionText-about' >We at Aura Airlines thrive to maintain flawless safety records by striving for the highest professional and regulatory requirements in Airline Industry. We are dedicated towards earning customer satisfaction by improving local opportunity, social responsibility, economic and environmental well-being of its stakeholders by diversifying todays airline business requirements.</p>
             </div>
-            <div className='col-md-7'>
-            <img  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" width="100%" height="500" />    
+            <div className='col-md-6'>
+            <img  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" 
+            alt="" width="100%" height="350" />    
             </div>
         </div>
         <div className='row descirition margin'>
-            <div className='col-md-7'>
-            <img src="https://burst.shopifycdn.com/photos/clouds-from-aircraft-window.jpg?width=1200&format=pjpg&exif=1&iptc=1" alt="" width="100%" height="500" />    
+            <div className='col-md-6'>
+            <img src="https://burst.shopifycdn.com/photos/clouds-from-aircraft-window.jpg?width=1200&format=pjpg&exif=1&iptc=1" alt="" 
+            width="100%" height="350" />    
             </div>
-            <div className='col-md-5 my-auto '>
+            <div className='col-md-6 my-auto '>
                 <h2 className='p-1'>Our vision</h2>
                 <p className='desciritionText-about' >To be the leader in business and leisure airline by conquering global skies.</p>
             </div>
         </div>
         <div className='desciritionColor-about '>
 
-        <h3 className='desciritionText-about3'><b>Who We Are</b></h3>
+        <h3 className='desciritionColor-heading'><b>Who We Are</b></h3>
         <div className='borber'>
         <p className='we-are text-center' >We are a team with excellent service and promised core values.</p>
         <br />
@@ -109,11 +111,11 @@ function About() {
         </div>
         <div className='row descirition margin'>
         <h3 className='descirition5-about'>Message From Chairman</h3>
-            <div className='col-md-5 my-auto'>
+            <div className='col-md-6 my-auto'>
                 <p className='desciritionText-about' >Success of a human being is really a great news for them as well as for you ..specially for you as it paved a way to go.</p>
             </div>
-            <div className='col-md-7'>
-            <img  src="https://petapixel.com/assets/uploads/2022/05/how-to-take-photos-out-of-an-airplane-window-featured.jpg" alt="" width="100%" height="500" />    
+            <div className='col-md-6'>
+            <img  src="https://petapixel.com/assets/uploads/2022/05/how-to-take-photos-out-of-an-airplane-window-featured.jpg" alt="" width="100%" height="300" />    
             </div>
         </div>
         </div>

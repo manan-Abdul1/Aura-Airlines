@@ -76,9 +76,8 @@
 .memberCard h5{
     color: #4b2c7b;
 }
-.memberCardLeft{
-}
-.memberCard img{
+
+.memberCardLeft img{
     background-size: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -97,17 +96,35 @@
 @media (max-width:576px) {
     .memberCard{
         padding: 0;
+        padding-bottom: 50px;
+    }
+    .memberCard .sm-heading{
+        text-align: justify;
+        font-size: 20px;
+        padding-left: 25px;
+        padding-right: 35px;
     }
     .memberCardLeft{
         width: 100%;
+        margin-left: 2px;
+        
+        /* margin-right: 10px; */
+    }
+    .memberCardLeft img{
+        box-shadow: 2px 2px 1px  #888;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
         background-size: cover;
+        height: 300px;
     }
     .memberCardRight{
         text-align: justify;
+        height: 350px;
         margin-left: 10px;
-        padding: 50px;
-        margin-bottom: 5px;
-        /* width: 100%; */
-        /* padding: 60px; */
+        padding: 50px 50px 0px 20px;
+        margin-bottom: 15px;
+        margin-right: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
     }
 }

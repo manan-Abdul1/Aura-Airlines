@@ -6,6 +6,23 @@
 .margin {
     margin: 80px;
 }
+.descirition img{
+    border-radius: 10px;
+}
+.descirition h2{
+    color: #4b2c7b;
+}
+.desciritionColor-heading{
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: 1.3px;
+        margin-top: 55px;
+        padding: 4px;
+}
+/* .desciritionText-about{
+    font-size: 15px;
+} */
+
 .margin1{
     position: relative;
     text-align: center;
@@ -23,4 +40,18 @@
 .we-core {
     font: italic small-caps bold 32px cursive;
     margin-left: 25px;
+}
+@media (max-width: 576px) {
+    .desciritionText-about3 {
+        font-size: 30px;
+    }
+    .descirition5-about {
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 25px;
+    }
+    .desciritionColor-heading{
+        font-size: 30px;
+        margin-top: 35px;
+    }
 }
